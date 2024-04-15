@@ -14,6 +14,7 @@ for(let contador = 0; contador < listaDeTeclas.length; contador++){
     
 
     tecla.onclick = function (){
+        document.querySelector(idAudio).currentTime = 0;
         playSonido(idAudio);
     };
     tecla.onkeydown = function(evento){
